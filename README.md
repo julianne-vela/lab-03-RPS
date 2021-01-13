@@ -1,6 +1,7 @@
 ### Rock Paper Scissors App
 
 ## HTML Setup
+- Instructions for player
 - Three radio buttons (rock, paper, scissors)
     - Images
     - Radio buttons need names
