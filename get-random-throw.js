@@ -21,5 +21,3 @@ export function didUserWin(player, computer) {
         return 'lose'
     } else return 'draw'
 }
-
-console.log(didUserWin('rock', 'paper'));

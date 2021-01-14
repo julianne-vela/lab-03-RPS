@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <title>Rock, Paper, Scissors</title>
 </head>
 
@@ -17,9 +19,21 @@
         Rock Paper Scissors
     </header>
     <main>
+        <div class="tally-box">
+            <div id="wins">
+                Wins: <span id="win-span"></span>
+            </div>
+            <div id="losses">
+                Losses: <span id="loss-span"></span>
+            </div>
+            <div id="draws">
+                Draw: <span id="draw-span"></span>
+            </div>
+        </div>
+        <div class="results" id="throw-results"></div>
         <section class="main-section">
             <content>
-                Let's play a game of Rock Paper Scissors. Bet you can't beat me!
+                Let's play a game of Rock Paper Scissors.<br>Bet you can't beat me!
                 <details>
                     <summary> In case you need a refresher: </summary>
                     <ul>
@@ -30,32 +44,20 @@
                 </details>
             </content>
             <div class="input">
-                <label for="rps">
-                    <input type="radio" name="rps" value="rock">
-                    <img src="./assets/rock.png" alt="a simple rock stone">
+                <label>
+                    <input type="radio" name="rps" value="rock" />
+                    <img src="./assets/rock.png" />
                 </label>
-                <label for="rps">
-                    <input type="radio" name="rps" value="paper">
-                    <img src="./assets/paper.png" alt="a scroll of paper">
+                <label>
+                    <input type="radio" name="rps" value="paper" />
+                    <img src="./assets/paper.png" />
                 </label>
-                <label for="rps">
-                    <input type="radio" name="rps" value="scissors">
-                    <img src="./assets/scissors.png" alt="a hand holding a pair of scissors">
+                <label>
+                    <input type="radio" name="rps" value="scissors" />
+                    <img src="./assets/scissors.png" />
                 </label>
             </div>
             <button id="shoot-button">Shoot!</button>
-            <div id="wins">
-                Wins: <span id="win-span"></span>
-            </div>
-            <div id="losses">
-                Losses: <span id="loss-span"></span>
-            </div>
-            <div id="draws">
-                Draw: <span id="draw-span"></span>
-            </div>
-            <div id="throw-results">
-
-            </div>
         </section>
     </main>
     <footer>
