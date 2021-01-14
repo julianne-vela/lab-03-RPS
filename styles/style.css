@@ -1,124 +1,122 @@
-
 body {
- /* CSS HSL */
-    --color1: hsla(118, 100%, 86%, 1);
-    --color2: hsla(145, 65%, 80%, 1);
-    --color3: hsla(159, 46%, 72%, 1);
-    --color4: hsla(31, 86%, 59%, 1);
-    --color5: hsla(356, 12%, 22%, 1);
-    
-    --header-height: 80px;
-    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
-    --gutter: 30px;
-    --footer-height: 25px;
-    
-    font-family: 'Indie Flower', cursive;
-    background-color: var(--color1);
-    color: var(--color5);
+  /* CSS HSL */
+  --color1: hsla(118, 100%, 86%, 1);
+  --color2: hsla(145, 65%, 80%, 1);
+  --color3: hsla(159, 46%, 72%, 1);
+  --color4: hsla(31, 86%, 59%, 1);
+  --color5: hsla(356, 12%, 22%, 1);
+
+  --header-height: 80px;
+  --shadow: 0px 10px 20px -12px rgba(0, 0, 0, 0.45);
+  --gutter: 30px;
+  --footer-height: 25px;
+
+  font-family: "Indie Flower", cursive;
+  background-color: var(--color1);
+  color: var(--color5);
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 1000px;
-    margin-bottom: calc(var(--footer-height));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1000px;
+  margin-bottom: calc(var(--footer-height));
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color3);
-    height: var(--header-height);
-    box-shadow: var(--shadow);
-    font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color3);
+  height: var(--header-height);
+  box-shadow: var(--shadow);
+  font-size: 2rem;
 }
 
 .tally-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 500px;
-    font-size: 1.5rem;
-    margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 500px;
+  font-size: 1.5rem;
+  margin-top: 10px;
 }
 
 section {
-    background-color: var(--color3);
-    width: 1000px;
-    max-width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+  background-color: var(--color3);
+  width: 1000px;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 button {
-    font-size: 2rem;
-    font-family: 'Indie Flower', cursive;
-    background-color: var(--color4);
-    color: var(--color5);
-    border-radius: 10px;
+  font-size: 2rem;
+  font-family: "Indie Flower", cursive;
+  background-color: var(--color4);
+  color: var(--color5);
+  border-radius: 10px;
 }
 
 .results {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    margin-bottom: 5px;
-    font-size: 1.5rem;
-    background-color: hsla(31, 86%, 59%, .5);
-    border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  background-color: hsla(31, 86%, 59%, 0.5);
+  border-radius: 10px;
 }
 
 content {
-    font-size: 1.5rem;
-    text-align: center;
-    padding-top: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 10px;
 }
 
 footer {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    box-shadow: var(--shadow);
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--color3);
+  box-shadow: var(--shadow);
 }
-
 
 h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 .input {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 label > img {
-    max-width: 200px;
-    max-height: 300px;
-    border-radius: 50%;
+  max-width: 200px;
+  max-height: 300px;
+  border-radius: 50%;
 }
 
 input {
-    display: none;
+  display: none;
 }
 
 input:checked + img {
-    box-shadow: 0 0 50px var(--color4);
+  box-shadow: 0 0 50px var(--color4);
 }
-  
+
 footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    height: var(--footer-height);
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    box-shadow: var(--shadow);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: var(--footer-height);
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--color3);
+  box-shadow: var(--shadow);
 }
