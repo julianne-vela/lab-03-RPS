@@ -7,17 +7,18 @@ export function getRandomThrow(compThrow) {
 }
 
 export function didUserWin(player, computer) {
-    if (player === 'rock' && computer === 'scissors') {
+    const rockScissorsWin = (player === 'rock' && computer === 'scissors') 
+    const paperRockWin = (player === 'paper' && computer === 'rock') 
+    const scissorsPaperWin = (player === 'scissors' && computer === 'paper')
+
+    const rockPaperLose = (player === 'rock' && computer === 'paper') 
+    const paperScissorsLose = (player === 'paper' && computer === 'scissors') 
+    const scissorsRockLose = (player === 'scissors' && computer === 'rock') 
+    
+
+    if (rockScissorsWin || paperRockWin || scissorsPaperWin) {
         return 'win'
-    } else if (player === 'paper' && computer === 'rock') {
-        return 'win'
-    } else if (player === 'scissors' && computer === 'paper') {
-        return 'win'
-    } else if (player === 'rock' && computer === 'paper') {
-        return 'lose'
-    } else if (player === 'paper' && computer === 'scissors') {
-        return 'lose'
-    } else if (player === 'scissors' && computer === 'rock') {
+    } else if (rockPaperLose || paperScissorsLose || scissorsRockLose) {
         return 'lose'
     } else return 'draw'
 }
