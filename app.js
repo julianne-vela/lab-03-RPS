@@ -31,7 +31,7 @@ function compareThrows(userPlay, rockPaperScissors) {
         throwResults.textContent = `Awesome! You chose ${userPlay} and the computer chose ${rockPaperScissors} so you won!`;
     } else if (didUserWin(userPlay, rockPaperScissors) === 'lose') {
         losses++;
-        throwResults.textContent = `Oh darn! ${rockPaperScissors} beats ${userPlay}. Better luck next time!`;
+        throwResults.textContent = `Oh dang! ${rockPaperScissors} beats ${userPlay}. Better luck next time!`;
     } else {
         draws++;
         throwResults.textContent = `So close! You and the computer both guessed ${userPlay}, so it's a draw!`;
